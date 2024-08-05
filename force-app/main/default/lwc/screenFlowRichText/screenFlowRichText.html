@@ -1,0 +1,20 @@
+<!--
+  @description       : 
+  @author            : Riley Meyer
+  @group             : 
+  @last modified on  : 08-05-2024
+  @last modified by  : Riley Meyer
+-->
+<template>
+  <lightning-input-rich-text value={fieldValue} 
+                              label={fieldLabel} 
+                              label-visible
+                              required={required} 
+                              formats={allowedFormats} 
+                              valid={validity}
+                              class="visibleLines"
+                              onchange={handleChange}             
+                              share-with-entity-id={recordId}
+                              message-when-bad-input={errorMessage}>
+  </lightning-input-rich-text>
+</template>
